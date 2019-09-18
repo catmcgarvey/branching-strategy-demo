@@ -1,4 +1,5 @@
 GitHub GraphQL Exercise
+=======================
 
 1. Navigate to https://developer.github.com/v4/explorer/ and sign into a GitHub account.
 
@@ -56,7 +57,8 @@ query {
 }
 ```
 
-This should result in an error like “Field 'organization' has an argument conflict: {login:\"\\\"github\\\"\"} or {login:\”\\\"spotify\\\"\"}?”
+This should result in an error like “Field 'organization' has an argument conflict: 
+`{login:\"\\\"github\\\"\"} or {login:\”\\\"spotify\\\"\"}?`
 
 This query failed because you have two objects with the same name. We have to give them an alias to make them unique.
 
