@@ -77,7 +77,7 @@ query {
 }
 ```
 
-6. Next we will try to update a comment with a reaction on Github. We use a mutation to do this. The mutation below has an argument of AddReactionInput.
+6. Up to this point this has been read opeations. Next we will try to update an existing comment with a reaction emoji on GitHub. We use a mutation to do this. The mutation below has an argument of AddReactionInput.
 
 ```
 mutation addReaction($input: AddReactionInput!){
@@ -90,7 +90,7 @@ mutation addReaction($input: AddReactionInput!){
  }
 }
 ```
-7. We will need to add variable values which will be used to call the addReaction method.
+In order for this to work we will also need to add the variable values which will be used to call the addReaction method. The content value below indicates the emoji which will be posted. Try one out. 
 
 ```
 {
@@ -102,7 +102,7 @@ mutation addReaction($input: AddReactionInput!){
 }
 ```
 
-8. Navigate to https://github.com/zobbolino/graphQLStuff/issues/1 to see your reaction on the comment.
+8. Now navigate to https://github.com/zobbolino/graphQLStuff/issues/1 to see your reaction reflected on the comment.
 
 
 
