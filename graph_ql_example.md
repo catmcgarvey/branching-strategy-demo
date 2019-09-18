@@ -1,7 +1,7 @@
 GitHub GraphQL Exercise
 =======================
 
-1. Navigate to https://developer.github.com/v4/explorer/ and sign into a GitHub account.
+1. Navigate to https://developer.github.com/v4/explorer/ and sign into a GitHub account. This is a sandbox that can be used to play around with GitHub's GraphQL API.
 
 2. On the left hand side there is a box you can type into, this is where you can query GitHub’s GraphQL endpoint. On the right hand side the result of your query will be displayed.  
 Copy the query below into the left hand box and click the play button. This will return data about the currently logged in user:
@@ -78,7 +78,7 @@ query {
 }
 ```
 
-6. Up to this point this has been read opeations. Next we will try to update an existing comment with a reaction emoji on GitHub. We use a mutation to do this. The mutation below has an argument of AddReactionInput.
+6. Up to this point we have only been peforming read operations. Next we will try to update an existing comment in GitHub with a reaction emoji. We use a mutation to do this. The mutation below has an argument of AddReactionInput.
 
 ```
 mutation addReaction($input: AddReactionInput!){
@@ -91,7 +91,7 @@ mutation addReaction($input: AddReactionInput!){
  }
 }
 ```
-In order for this to work we will also need to add the variable values which will be used to call the addReaction method. The content value below indicates the emoji which will be posted. Try one out. 
+In order for this to work we will also need to add the variable values which will be used to call the addReaction method. The input request below should be copied into the query parameters input box. The content value below indicates the emoji which will be posted. Try an emoji out. 
 
 ```
 {
