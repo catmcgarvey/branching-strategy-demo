@@ -77,7 +77,33 @@ query {
 }
 ```
 
-6. Next we will try a mutation, we will attempt to add a 
+6. Next we will try to update a comment with a reaction on Github. We use a mutation to do this. The mutation below has an argument of AddReactionInput.
+
+```
+mutation addReaction($input: AddReactionInput!){
+ addReaction(input: $input){
+   clientMutationId
+   reaction{
+     content
+     createdAt
+   }
+ }
+}
+```
+7. We will need to add variable values which will be used to call the addReaction method.
+
+```
+{
+ "input": {
+   "clientMutationId": "$513645863",
+   "subjectId": "MDEyOklzc3VlQ29tbWVudDUyNzE2MDYxNQ==",
+   "content": "HOORAY"
+ }
+}
+```
+
+8. Navigate to https://github.com/zobbolino/graphQLStuff/issues/1 to see your reaction on the comment.
+
 
 
 
