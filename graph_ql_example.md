@@ -103,7 +103,7 @@ The input request below should be copied into the query parameters input box.
  }
 }
 ```
-The subjectId is the comment's unique identifier. The content value below indicates the emoji type which will be posted. Try an emoji out. 
+The clientMutationId can just be a just a random unique identifier for your client. The subjectId is the comment's unique identifier. The content value below indicates the emoji type which will be posted. Try an emoji out. 
 
 8. Now navigate to https://github.com/zobbolino/graphQLStuff/issues/1 to see your reaction reflected on the comment.
 
