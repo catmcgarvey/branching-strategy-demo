@@ -35,12 +35,14 @@ query {
 
 4. Next try querying for an organisation with an argument called login. This will return the name and url of the user with login name github.
 
+```
 query {
   organization(login: "github") {
     name
     url
   }
 }
+```
 
 5. Next we will query for the same data with different Try querying for two organisation simultaneously:
 
