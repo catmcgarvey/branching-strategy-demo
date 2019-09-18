@@ -78,7 +78,7 @@ query {
 }
 ```
 
-6. Up to this point we have only been peforming read operations. Next we will try to update an existing comment in GitHub with a reaction emoji. We use a mutation to do this. The mutation below has an argument of AddReactionInput.  Copy this into the same input box as the queries.
+6. Up to this point we have only been peforming read operations. Next we will try to update an existing comment in GitHub with a reaction emoji. We use a mutation to do this. The mutation below has an required input argument of type AddReactionInput.  Copy this into the same input box as the queries.
 
 ```
 mutation addReaction($input: AddReactionInput!){
