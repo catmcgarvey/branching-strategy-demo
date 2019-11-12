@@ -1,3 +1,3 @@
 # graphql-example-repo
-test
-dfdsfdsf
+
+with conventional commits, husky and standard version.
