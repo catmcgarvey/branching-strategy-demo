@@ -9,7 +9,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 * add new code ([9eb2f4e](https://github.com/catmcgarvey/graphql-example-repo/commit/9eb2f4efb82d0c8c4063967a044f6d63ff201b63))
 
-
 ## 1.0.0 (2019-11-11)
 
 
