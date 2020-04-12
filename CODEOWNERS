@@ -2,3 +2,9 @@
 # the repo. Unless a later match takes precedence,
 # these will be requested for review when someone opens a pull request.
 *       @amctavish
+
+
+/services/service-1/ @catmcgarvey-backup @catmcgarvey
+
+
+/services/service-2/  @catmcgarvey-backup2 @catmcgarvey
